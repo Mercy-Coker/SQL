@@ -30,3 +30,10 @@ EDA involved exploring the deforestation datasets to answer key questions such a
 ### DATA ANALYSIS
 
 ~~~SQL
+SELECT L.country_name, R.income_group, L.total_area_sq_mi FROM Region R
+JOIN Land_Area L ON 
+R.Country_code = L.Country_code
+WHERE total_area_sq_mi BETWEEN 75000 AND 150000
+GROUP BY L.country_name, R.income_group, L.total_area_sq_mi
+ORDER BY R.income_group DESC;
+~~~
