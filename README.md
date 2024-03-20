@@ -15,4 +15,18 @@ SQL Server - Data cleaning and data analysis.
 ### CLEANING / PREPARATION
 
 - Data loading and inspection
-- 
+- Handling null values
+- Data cleaning and formatting
+
+### EXPLORATORY DATA ANALYSIS (EDA)
+
+EDA involved exploring the deforestation datasets to answer key questions such as:
+- What are the total number of countries involved in deforestation? 
+- Show the income groups of countries having total area ranging from 75,000 to 150,000 square meter.
+- Calculate average area in square miles for countries in the 'upper middle income region'. Compare the result with the rest of the income categories.
+- Determine the total forest area in square km for countries in the 'high income' group. Compare result with the rest of the income categories.
+- Show countries from each region(continent) having the highest total forest areas. 
+
+### DATA ANALYSIS
+
+~~~SQL
