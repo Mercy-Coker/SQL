@@ -42,3 +42,9 @@ THE FULL PROJECT CAN BE SEEN [HERE](https://github.com/Mercy-Coker/SQL/blob/main
 
 ### RESULTS AND FINDINGS
 
+![image](https://github.com/Mercy-Coker/SQL/assets/163846267/ec596eda-6774-4e85-accd-d776edb78da1)
+
+![image](https://github.com/Mercy-Coker/SQL/assets/163846267/02034ac1-7e2c-449d-b144-8ef1d3b9020f)
+
+
+
