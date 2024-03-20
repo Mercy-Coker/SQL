@@ -38,3 +38,5 @@ GROUP BY L.country_name, R.income_group, L.total_area_sq_mi
 ORDER BY R.income_group DESC;
 ~~~
 
+The full project can be seen [HERE](https://github.com/Mercy-Coker/SQL/blob/main/SQL_PROJECT..sql)
+
