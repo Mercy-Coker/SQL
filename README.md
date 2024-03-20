@@ -37,3 +37,4 @@ WHERE total_area_sq_mi BETWEEN 75000 AND 150000
 GROUP BY L.country_name, R.income_group, L.total_area_sq_mi
 ORDER BY R.income_group DESC;
 ~~~
+
