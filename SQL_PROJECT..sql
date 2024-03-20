@@ -19,7 +19,7 @@ SELECT DISTINCT PERCENTILE_CONT(0.5)
 WITHIN GROUP (ORDER BY forest_area_sqkm) OVER() AS 'MEDIAN'
 FROM Forest_Area;
 
---REPLACING THE NULL VALUES WITH THE MEDIAN
+-- REPLACING THE NULL VALUES WITH THE MEDIAN
 
 UPDATE Forest_Area SET forest_area_sqkm = 
 (SELECT DISTINCT PERCENTILE_CONT(0.5)
@@ -40,7 +40,7 @@ SELECT DISTINCT PERCENTILE_CONT(0.5)
 WITHIN GROUP (ORDER BY total_area_sq_mi) OVER() AS 'MEDIAN'
 FROM Land_Area;
 
---REPLACING THE NULL VALUES WITH THE MEDIAN
+-- REPLACING THE NULL VALUES WITH THE MEDIAN
 
 UPDATE Land_Area SET total_area_sq_mi = 
 (SELECT DISTINCT PERCENTILE_CONT(0.5)
@@ -58,9 +58,9 @@ SELECT DISTINCT income_group FROM Region;
 
 SELECT DISTINCT year FROM Forest_Area;
 
---CALCULATING THE TOTAL NUMBER OF COUNTRIES INVOLVED IN DEFORESTATION
+-- CALCULATING THE TOTAL NUMBER OF COUNTRIES INVOLVED IN DEFORESTATION
 
-SELECT COUNT(Country_name) AS Total_number_of_countries FROM Forest_Area;
+SELECT COUNT(DISTINCT Country_name) AS Total_number_of_countries FROM Forest_Area;
 
 --Show the income groups of countries having total area ranging from 75,000 to 150,000 square meter
 
@@ -79,8 +79,8 @@ SELECT DISTINCT income_group FROM Region R
 JOIN Land_Area L ON 
 R.Country_code = L.Country_code; 
 
-/*Calculate average area in square miles for countries in the 'upper middle income region'.
-Compare the result with the rest of the income categories.*/
+/* Calculate average area in square miles for countries in the 'upper middle income region'.
+Compare the result with the rest of the income categories */
 
 SELECT AVG(total_area_sq_mi) AS UMI_Average_Area FROM
 Region R JOIN Land_Area L ON 
@@ -102,8 +102,8 @@ WHERE income_group = 'LOW INCOME';
 
 SELECT * FROM Forest_Area;
 
-/*Determine the total forest area in square km for countries in the 'high income' group. 
-Compare result with the rest of the income categories*/
+/* Determine the total forest area in square km for countries in the 'high income' group. 
+Compare result with the rest of the income categories */
 
 SELECT SUM(forest_area_sqkm) AS HI_Total_forest_area 
 FROM Forest_Area F JOIN Region R ON 
@@ -122,7 +122,7 @@ FROM Forest_Area F JOIN Region R ON
 F.country_code=R.country_code
 WHERE income_group = 'LOWER MIDDLE INCOME';
 
---Show countries from each region(continent) having the highest total forest areas.
+-- Show countries from each region(continent) having the highest total forest areas.
 
 SELECT country_name, region, 
 (SELECT MAX(forest_area_sqkm) 
@@ -134,23 +134,23 @@ SELECT * FROM Forest_Area;
 SELECT * FROM Land_Area;
 SELECT * FROM Region;
 
---Country with highest total Area.
+-- Country with highest total Area.
 
 SELECT country_name, total_area_sq_mi
 FROM Land_Area
 WHERE total_area_sq_mi = (SELECT MAX(total_area_sq_mi) HTLA FROM Land_Area);
 
---Country with lowest total Area.
+-- Country with lowest total Area.
 
 SELECT DISTINCT country_name, total_area_sq_mi FROM Land_Area
 WHERE total_area_sq_mi = (SELECT MIN(total_area_sq_mi) LTLA FROM Land_Area);
 
---Country with highest Forest Area.
+-- Country with highest Forest Area.
 
 SELECT country_name,forest_area_sqkm FROM Forest_Area
 WHERE forest_area_sqkm = (SELECT MAX(forest_area_sqkm) HTFA FROM Forest_Area);
 
---Country with lowest Forest Area
+-- Country with lowest Forest Area
 
 SELECT TOP 1 country_name,forest_area_sqkm
 FROM Forest_Area
