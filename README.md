@@ -42,9 +42,15 @@ THE FULL PROJECT CAN BE SEEN [HERE](https://github.com/Mercy-Coker/SQL/blob/main
 
 ### RESULTS AND FINDINGS
 
+The analysis results are summarized as follows:
+
+ - The total number of countries involved in the deforestation is 218
+
 ![image](https://github.com/Mercy-Coker/SQL/assets/163846267/ec596eda-6774-4e85-accd-d776edb78da1)
 
 ![image](https://github.com/Mercy-Coker/SQL/assets/163846267/02034ac1-7e2c-449d-b144-8ef1d3b9020f)
 
+![image](https://github.com/Mercy-Coker/SQL/assets/163846267/f0ad4075-b601-4334-9d68-3b6493afe77a)
 
+![image](https://github.com/Mercy-Coker/SQL/assets/163846267/22a08c96-c715-41bf-bbd8-be81236ec58a)
 
