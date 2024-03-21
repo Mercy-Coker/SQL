@@ -54,10 +54,11 @@ The analysis results are summarized as follows:
 
 - The table below shows the total forest area in square km for countries in the 'high income' group, in comparison to the rest of the income categories
 
-- The table below Shows the countries from each region(continent) having the highest total forest areas.
-
 ![image](https://github.com/Mercy-Coker/SQL/assets/163846267/f0ad4075-b601-4334-9d68-3b6493afe77a)
 
+- The table below Shows the countries from each region(continent) having the highest total forest areas.
+
 ![image](https://github.com/Mercy-Coker/SQL/assets/163846267/22a08c96-c715-41bf-bbd8-be81236ec58a)
+
 
 THE FULL PROJECT CAN BE SEEN [HERE](https://github.com/Mercy-Coker/SQL/blob/main/SQL_PROJECT..sql)
