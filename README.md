@@ -38,8 +38,6 @@ GROUP BY L.country_name, R.income_group, L.total_area_sq_mi
 ORDER BY R.income_group DESC;
 ~~~
 
-THE FULL PROJECT CAN BE SEEN [HERE](https://github.com/Mercy-Coker/SQL/blob/main/SQL_PROJECT..sql)
-
 ### RESULTS AND FINDINGS
 
 The analysis results are summarized as follows:
@@ -54,3 +52,4 @@ The analysis results are summarized as follows:
 
 ![image](https://github.com/Mercy-Coker/SQL/assets/163846267/22a08c96-c715-41bf-bbd8-be81236ec58a)
 
+THE FULL PROJECT CAN BE SEEN [HERE](https://github.com/Mercy-Coker/SQL/blob/main/SQL_PROJECT..sql)
